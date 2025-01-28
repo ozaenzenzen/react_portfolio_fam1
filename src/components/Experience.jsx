@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 const Experience = () => {
   return (
     <div className="border-b border-neutral-900 pb-4">
+      {/* Title Section */}
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -13,6 +14,8 @@ const Experience = () => {
       >
         Experience
       </motion.h2>
+
+      {/* Detail Section */}
       <div>
         {EXPERIENCES.map((item, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
